@@ -5,3 +5,5 @@ server.use(express.json());
 server.get('/', (req, res) => {
   res.send('<h2> Sprint Challenge Backend #1!!</h2>');
 });
+
+module.exports = server;
