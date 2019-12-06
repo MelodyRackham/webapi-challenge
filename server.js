@@ -3,7 +3,8 @@ const server = express();
 
 server.use(express.json());
 server.get('/', (req, res) => {
-  res.send('<h2> Sprint Challenge Backend #1!!</h2>');
+  const queryParameters = req.query;
+  res.status(200).json(queryParameters);
 });
 
 module.exports = server;
